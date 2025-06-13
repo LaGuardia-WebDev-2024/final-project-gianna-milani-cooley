@@ -13,7 +13,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: rgb(255, 243, 199);
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,18 +26,18 @@ ul.nav li {
 
 ul.nav li a {
   display: block;
-  color: white;
+  color: rgb(252, 129, 158);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 ul.nav li a:hover:not(.active) {
-  background-color: yellow;
+  background-color:rgb(254, 199, 180)
 }
 
 ul.nav .active {
-  background-color: red;
+  background-color: rgb(255, 243, 199);
 }
 
 h1 {

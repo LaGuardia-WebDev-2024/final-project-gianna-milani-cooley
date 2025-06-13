@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        display: flex;
+        background-color: rgb(255, 243, 199);
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+      }
+
+      .parent-flex img {
+        width: 150px;
+        padding: 20px;
+      }
+      .child-flex p {
+        background-color: rgb(255, 243, 199);
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+    <script>
+      function checkAnswer(isCorrect) {
+        if (isCorrect) {
+          alert("✅ Correct! Jordans are the best!");
+        } else {
+          alert("❌ Oops! Try again. This one isn’t the top favorite.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="Shoes.html">Shoes</a></li>
+      <li><a href="Hair.html">Hairstyles</a></li>
+      <li><a href="Food.html">Food&Drinks</a></li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src=""
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src=""
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+    </ul>
+
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>My Favorite Shoes</h1>
+
+    <div class="section">
+      <h2>Designer Sneakers</h2>
+      <p>
+        Designer sneakers are stylish and luxurious, made by top fashion brands like Balenciaga, Louis Vuitton, and Gucci.
+        They combine fashion with comfort and always help me stand out in a crowd with their unique designs.
+      </p>
+
+      <h2>Jordans</h2>
+      <p>
+        Jordans are legendary sneakers known for their cool style and connection to basketball culture. 
+        I especially love how each release tells a story and adds flavor to my outfits. They’re my top favorite shoes!
+      </p>
+    </div>
+
+    <!-- Sneaker Choice Section -->
+    <h2>Which one do I have more of?</h2>
+    <div class="choice-container">
+      <img
+        src="https://i.pinimg.com/originals/f6/7c/c4/f67cc4b83e39e7b036ca03c141ccac3b.jpg"
+        alt="Designer Sneakers"width=500
+        onclick="checkAnswer(false)"
+      />
+      <img
+        src="https://i.pinimg.com/1200x/57/06/4c/57064ca3c240f6102cbe3d51501b9d0b.jpg"
+        alt="Air Jordans"width=500
+        onclick="checkAnswer(true)"
+      />
+    </div>
+  </body>
+</html>
